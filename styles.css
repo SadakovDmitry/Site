@@ -40,7 +40,7 @@ main {
 }
 
 .full-width-img {
-    width: 100%;
+    width: auto;
     height: auto;
     display: block; /* Убирает пробелы вокруг изображения */
 }
