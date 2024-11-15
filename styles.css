@@ -43,7 +43,7 @@ main {
     background-color: #ff0000;
     width: 50%;
     height: 100%;
-    display: block; /* Убирает пробелы вокруг изображения */
+    /* display: block;*/ /* Убирает пробелы вокруг изображения */
 }
 
 footer {
