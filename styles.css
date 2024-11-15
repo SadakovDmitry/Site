@@ -41,7 +41,7 @@ main {
 
 .full-width-img {
     background-color: #ff0000;
-    width: 2540px;
+    width: 50%;
     height: auto;
     display: block; /* Убирает пробелы вокруг изображения */
 }
