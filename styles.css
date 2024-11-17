@@ -1,57 +1,397 @@
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: 'Porshe';
+    font-display: swap;
+    src: local(Porshe),
+        url(/Users/dima/MIPT/WORK/font/Porsche\ Regular_0.ttf),
+        url(/Users/dima/MIPT/WORK/font/Porsche-Regular_0.woff);
+}
+
+* {
+    font-family: 'Porshe';
+    font-display: swap;
+    src: local(Porshe),
+        url(/Users/dima/MIPT/WORK/font/Porsche\ Regular_0.ttf),
+        url(/Users/dima/MIPT/WORK/font/Porsche-Regular_0.woff);
+    padding: 0;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    color: #ffffff;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
+footer li, footer a, footer p{
+   font-family: "Poiret One", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #444;
-    overflow: hidden;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #111;
-}
-
-main {
-    padding: 0;
-}
-
-.full-width-img {
-    background-color: #ff0000;
+.spline {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 839px;
+    overflow: hidden;
+    background-image: url(/Users/dima/MIPT/WORK/images/spline.png);
+}
+
+.spline .text {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    width: 1356px;
+    height: 81px;
+    left: 64px;
+    top: 676px;
+}
+
+.spline .text h1 {
+    margin-left: 164px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 81px;
+    width: 458px;
+    height: 81px;
+    text-align: right;
+    align-self: center;
+}
+
+.spline .text h2 {
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    width: 734px;
+    height: 54px;
+    align-self: center;
+}
+
+.prev_video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 294px;
+    background-image: url(/Users/dima/MIPT/WORK/images/Rectangle10.png);
+}
+
+.prev_video .button {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background-color: #ffffff;
+}
+
+.prev_video .button::after {
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    border: 13px solid transparent;
+    border-bottom-color:#930909;
+    transform: rotate(90deg);
+    content: "";
+}
+
+.prev_video .button:hover::after {
+    border-bottom-color: #ffffff;
+}
+
+.prev_video .button:hover {
+    background-color: #202120;
+}
+
+.prev_video .button:active::after {
+    border-bottom-color: #ffffff;
+}
+
+.prev_video .button:active {
+    background-color: #191919;
+}
+
+.offers {
+    position: relative;
+    width: 100%;
+    height: 1920px;
+    background-color: #202120;
+}
+
+.offers .button {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.offers .pr {
+    top: 0;
+    left: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.offers .smm {
+    top: 50%;
+    left: 50%;
+    border-right: none;
+}
+
+.offers .wb {
+    top: 50%;
+    left: 0;
+    border-left: none;
+}
+
+.offers .production {
+
+    top: 0;
+    left: 50%;
+    border-top: none;
+    border-right: none;
+}
+
+.vert_line {
+    display: none;
+    position: absolute;
+    height: 86.7%;
+    width: 1px;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.hor_line {
+    display: none;
+    position: absolute;
+    width: 86.7%;
+    height: 1px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.dot {
+    position: absolute;
+    top: 888px;
+    left: 92.5%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.number {
+    position: absolute;
+    top: 64px;
+    left: 64px;
+    width: 31px;
+    height: 14px;
+}
+
+.button h3 {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    top: 884px;
+    left: 69.6%;
+}
+
+.button .name {
+    border: 40px solid #202120;
+    background-color: #202120;
+    z-index: 1;
+}
+
+.offers .button:hover {
+    background-color: #191919;
+}
+
+.offers .button:hover .name {
+    border-color: #191919;
+}
+
+.offers .button:hover .vert_line {
     display: block;
+}
+
+.offers .button:hover .hor_line {
+    display: block;
+}
+
+.offers .button:hover h3 {
+    display: block;
+}
+
+.offers .button:active .vert_line {
+    display: block;
+}
+
+.offers .button:active .hor_line {
+    display: block;
+}
+
+.offers .button:active h3 {
+    display: block;
+}
+
+.offers .button:active {
+    background-color: #0f0f0f;
+}
+
+.offers .button:active .name {
+    border-color: #0f0f0f;
+}
+
+.third {
+  border-top: 0.5px solid rgba(255, 255, 255,0.25);
+  background-color: #202120;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.third spline-viewer{
+  width: 100%;
+  height: 1000px;
+  margin-top: -270px;
+}
+
+button {
+  background-color: #202120;
+  border: 0;
+  height: 498px;
+}
+
+button a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sign {
+  display: none;
+  position: absolute;
+  align-self: center;
+  top: 390px;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.sign img {
+  position: absolute;
+  margin-top: -10px;
+  right: 46.5%;
+  width: 40px;
+  height: 40px;
+}
+
+button:hover .sign {
+  display: block;
+}
+
+.fourth {
+  position: relative;
+  width: 100%;
+  height: 1846px;
+  display: flex;
+  justify-content: center;
+  background-color: #202120;
+  overflow: hidden;
+}
+
+.fourth img {
+  left:-1px;
+  width: 2000px;
+  height: 2200px;
+}
+
+.images {
+  position: absolute;
+  top: 710px;
+  z-index: 1;
+}
+
+.blik {
+  position: absolute;
+  top: 710px;
+  z-index: 2;
+}
+
+.images img {
+  width: 880px;
+  height: 880px;
+}
+
+.blik img{
+  width: 880px;
+  height: 880px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #060606;
+  width: 100%;
+  height: 300px;
+}
+
+.line {
+  position: absolute;
+  bottom: 255px;
+  margin-top: 100px;
+  width: 93%;
+  height: 1px;
+  border-bottom: 0.5px solid rgba(255, 255, 255,0.25);
+}
+
+.icon {
+  position: absolute;
+  height: 78px;
+  bottom: 127px;
+  left: 66px;
+}
+
+footer p {
+  position: absolute;
+  bottom: 32px;
+  left: 3.4%;
+  font-size: 18px;
+  color: rgba(255, 255, 255,0.4);
+}
+
+.information {
+  position: absolute;
+  left: 26.8%;
+  bottom: 127px;
+  width: 570px;
+}
+
+.menu {
+  position: absolute;
+  left: 74.2%;
+  bottom: 127px;
+  width: 110px;
+}
+
+.media {
+  position: absolute;
+  left: 86.5%;
+  bottom: 150px;
+  width: 110px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  font-size: 18px;
+  color: #fff;
+  list-style: none;
+  margin-bottom: 10px;
+  line-height: 11.25px;
 }
