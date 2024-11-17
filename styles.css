@@ -395,3 +395,75 @@ li {
   margin-bottom: 10px;
   line-height: 11.25px;
 }
+
+/* Стили для мобильных устройств (до 768px) */
+@media only screen and (max-width: 768px) {
+    .spline .text h1 {
+        font-size: 48px; /* уменьшаем размер шрифта */
+        margin-left: 20px; /* сокращаем отступы */
+    }
+    .spline .text h2 {
+        font-size: 18px;
+    }
+    .prev_video {
+        height: 200px; /* уменьшение высоты секции */
+    }
+    .offers .button {
+        width: 100%; /* кнопки занимают всю ширину */
+        height: auto;
+    }
+    .offers .button h2 {
+        font-size: 18px;
+    }
+    .third spline-viewer {
+        height: 600px; /* уменьшаем высоту просмотра */
+    }
+    .fourth img {
+        width: 100%; /* адаптация изображения по ширине */
+        height: auto;
+    }
+    footer {
+        flex-direction: column; /* элементы в футере идут один за другим */
+        height: auto;
+        padding: 20px;
+    }
+    .information,
+    .menu,
+    .media {
+        width: 100%;
+        margin-bottom: 15px; /* отступ между блоками */
+    }
+}
+
+/* Стили для планшетов (от 768px до 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .spline .text h1 {
+        font-size: 60px;
+    }
+    .spline .text h2 {
+        font-size: 20px;
+    }
+    .offers .button {
+        width: 48%; /* уменьшаем ширину кнопок */
+    }
+}
+
+/* Стили для десктопов (более 1024px) */
+@media only screen and (min-width: 1024px) {
+    .spline .text h1 {
+        font-size: 72px;
+    }
+    .prev_video .button {
+        width: 160px;
+        height: 160px;
+    }
+    .third spline-viewer {
+        height: 1000px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
