@@ -170,7 +170,7 @@ footer li, footer a, footer p{
 
 .dot {
     position: absolute;
-    top: 888px;
+    top: 92.5%;
     left: 92.5%;
     width: 6px;
     height: 6px;
@@ -180,8 +180,8 @@ footer li, footer a, footer p{
 
 .number {
     position: absolute;
-    top: 64px;
-    left: 64px;
+    top: 6.66%;
+    left: 6.66%;
     width: 31px;
     height: 14px;
 }
@@ -190,7 +190,7 @@ footer li, footer a, footer p{
     display: none;
     position: absolute;
     font-size: 14px;
-    top: 884px;
+    top: 92.4%;
     left: 69.6%;
 }
 
@@ -254,7 +254,7 @@ footer li, footer a, footer p{
 .third spline-viewer{
   width: 100%;
   height: 1000px;
-  margin-top: -270px;
+  margin-top: -40%;
 }
 
 button {
@@ -396,74 +396,224 @@ li {
   line-height: 11.25px;
 }
 
-/* Стили для мобильных устройств (до 768px) */
-@media only screen and (max-width: 768px) {
-    .spline .text h1 {
-        font-size: 48px; /* уменьшаем размер шрифта */
-        margin-left: 20px; /* сокращаем отступы */
-    }
-    .spline .text h2 {
-        font-size: 18px;
-    }
-    .prev_video {
-        height: 200px; /* уменьшение высоты секции */
-    }
-    .offers .button {
-        width: 100%; /* кнопки занимают всю ширину */
-        height: auto;
-    }
-    .offers .button h2 {
-        font-size: 18px;
-    }
-    .third spline-viewer {
-        height: 600px; /* уменьшаем высоту просмотра */
-    }
-    .fourth img {
-        width: 100%; /* адаптация изображения по ширине */
-        height: auto;
-    }
-    footer {
-        flex-direction: column; /* элементы в футере идут один за другим */
-        height: auto;
-        padding: 20px;
-    }
-    .information,
-    .menu,
-    .media {
+@media only screen and (max-width: 1024px)  {
+    .spline {
+        background-image: url(/Users/dima/MIPT/WORK/images_375/image-2.png);
         width: 100%;
-        margin-bottom: 15px; /* отступ между блоками */
+        height: 814px;
+        /* border-bottom: 214px solid rgba(155, 155, 0, 0.25); */
     }
-}
 
-/* Стили для планшетов (от 768px до 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .spline .text h1 {
-        font-size: 60px;
+    .spline .text {
+        flex-direction: column;
+        position: absolute;
+        width: 91.4%;
+        height: 56px;
+        left: 16px;
+        top: 625px;
+        z-index: 1;
     }
+
+    .spline .text h1 {
+        margin-left: 16px;
+        font-size: 50px;
+        line-height: 56.35px;
+        width: 91.4%;
+        height: 56px;
+        text-align: right;
+        align-self: center;
+    }
+
     .spline .text h2 {
-        font-size: 20px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 13.5px;
+        width: 91.4%;
+        height: 28px;
+        text-align: right;
+        align-self: right;
     }
-    .offers .button {
-        width: 48%; /* уменьшаем ширину кнопок */
-    }
-}
 
-/* Стили для десктопов (более 1024px) */
-@media only screen and (min-width: 1024px) {
-    .spline .text h1 {
-        font-size: 72px;
+    .prev_video {
+        background-image: url(/Users/dima/MIPT/WORK/images_375/Rectangle\ 10-2.svg);
+        height: 200px;
     }
     .prev_video .button {
-        width: 160px;
-        height: 160px;
+        width: 120px;
+        height: 120px;
     }
+
+    .offers {
+        height: 1500px;
+    }
+
+    .offers .button {
+        width: 100%;
+        height: 25%;
+    }
+
+    .offers .pr {
+    top: 0;
+    left: 0;
+    }
+
+    .offers .smm {
+        top: 75%;
+        left: 0;
+    }
+
+    .offers .wb {
+        top: 50%;
+        left: 0;
+    }
+
+    .offers .production {
+        top: 25%;
+        left: 0;
+    }
+
+    .offers .button .name {
+        font-size: 20px;
+        line-height: 22.5px;
+        text-align: center;
+    }
+    .offers .button .number {
+        font-size: 12px;
+        line-height: 13.5px;
+    }
+    .offers .button .dot {
+        width: 3.13px;
+        height: 3.13px;
+    }
+    .offers .button h3 {
+        left: 48.8%;
+        font-size: 12px;
+        line-height: 13.5px;
+    }
+
     .third spline-viewer {
-        height: 1000px;
+        height: 738px;
+        margin-top: -90px;
     }
-    footer {
+
+    .fourth {
+        width: 100%;
+        height: 800px;
+        top: 0px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        background-color: #202120;
+        overflow: hidden;
+        /* background-image: url(/Users/dima/MIPT/WORK/images_375/bg.svg); */
+    }
+
+    .fourth img {
+        /* top: -600px; */
+        left:-1px;
+        width: 1254px;
+        height: 830px;
+    }
+
+    .images {
+        position: absolute;
+        top: 251px;
+        z-index: 1;
+    }
+
+    .blik {
+        position: absolute;
+        top: 251px;
+        z-index: 2;
+    }
+
+    .images img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .blik img{
+        width: 360px;
+        height: 360px;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+        height: 521px;
+    }
+
+    .line {
+        bottom: 258px;
+        margin-top: 151px;
+        left: 16px;
+        width: 92%;
+        height: 110px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+        border-top: 0.5px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .icon {
+        height: 61.87px;
+        width: 150px;
+        top: 34px;
+        left: 17.5px;
+    }
+
+    .information {
+        left: 4.2%;
+        bottom: 112px;
+        width: 91.5%;
+    }
+    .menu {
+        left: 4.6%;
+        top: 0;
+        bottom: 150px;
+        width: 91.3%;
+    }
+    .menu .about_us{
+        position: absolute;
+        text-align: left;
+        height: 21px;
+        top: 180px;
+        left: 0;
+    }
+
+    .menu .service{
+        position: absolute;
+        text-align: left;
+        height: 21px;
+        top: 220px;
+        left: 0;
+    }
+
+    .menu .contacts {
+        position: absolute;
+        text-align: right;
+        height: 21px;
+        /* width: 15%; */
+        top: 220px;
+        /* left: 77%; */
+        right: 2%;
+
+    }
+
+    .menu .projects{
+        position: absolute;
+        text-align: right;
+        height: 21px;
+        /* width: 15%; */
+        top: 180px;
+        /* left: 77%; */
+        right: 2%;
+    }
+
+    .media {
+        left: 63.8%;
+        bottom: 404px;
+        width: 31.5%;
+    }
+
+    .media li{
+        text-align: right;
     }
 }
-
