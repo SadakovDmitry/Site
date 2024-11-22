@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-    </style>
-    <title>+7 GROUP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+  </style>
+  <title>+7 GROUP</title>
 </head>
 <body>
-    <main>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.42/build/spline-viewer.js"></script>
+  <main>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.42/build/spline-viewer.js"></script>
     <spline-viewer
       id="splineViewer2"
       loading-anim-type="spinner-small-dark">
@@ -29,40 +29,36 @@
         const viewer2 = document.getElementById('splineViewer2');
 
         if (viewer2) {
-            if (window.innerWidth <= 800) {
-                viewer2.setAttribute('url', 'https://prod.spline.design/IAquUKKdEnuTiWKY/scene.splinecode');
-                console.log("I am in SMALL window");
+          if (window.innerWidth <= 800) {
+            viewer2.setAttribute('url', 'https://prod.spline.design/IAquUKKdEnuTiWKY/scene.splinecode');
 
-                // Если на мобильном, добавляем тег <img> если его нет
-                if (!viewer2.querySelector('img')) {
-                    console.log("I am on mobile");
-                    const img = document.createElement('img');
-                    img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAJcklEQVR4AQCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8BgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/2VxE67vXV9DAAAAAElFTkSuQmCC'; // Замените на ваше изображение
-                    img.alt = 'Fallback image';
-                    img.style = 'width: 100%; height: 600px;';
-                    viewer2.appendChild(img);
-                }
-            } else {
-                console.log("I am on computer")
-                viewer2.setAttribute('url', 'https://prod.spline.design/8oVjzrAYTJsT5xlM/scene.splinecode');
-
-                // Убираем тег <img>, если размер больше 375px
-                const img = viewer2.querySelector('img');
-                if (img) {
-                    viewer2.removeChild(img);
-                }
+            // Если на мобильном, добавляем тег <img> если его нет
+            if (!viewer2.querySelector('img')) {
+              const img = document.createElement('img');
+              img.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAJcklEQVR4AQCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8AgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/wCBAH7/ACMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/AIEAfv8AIx8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8BgQB+/wAjHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/yMfHf8jHx3/Ix8d/2VxE67vXV9DAAAAAElFTkSuQmCC'; // Замените на ваше изображение
+              img.alt = 'Fallback image';
+              img.style = 'width: 100%; height: 600px;';
+              viewer2.appendChild(img);
             }
+          } else {
+            viewer2.setAttribute('url', 'https://prod.spline.design/8oVjzrAYTJsT5xlM/scene.splinecode');
+
+            // Убираем тег <img>, если размер больше 375px
+            const img = viewer2.querySelector('img');
+            if (img) {
+              viewer2.removeChild(img);
+            }
+          }
         }
       }
 
       // Обработчик события изменения размера окна
       window.addEventListener('resize', updateSplineURLs);
-      console.log("Current window width: ", window.innerWidth);
 
       // Вызов функции сразу при загрузке страницы
       updateSplineURLs();
     });
-    </script>
+  </script>
 
     <section class="first">
         <div class="button"></div>
